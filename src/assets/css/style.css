@@ -1,0 +1,257 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+:root {
+  --color-text-main: #111111;
+  --color-text-secondary: #333333;
+  --color-text-description: #666666;
+  --color-bg-main: #fff;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+a:visited {
+  color: var(--color-text-description);
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.left-side {
+  width: 40%;
+}
+
+.right-side {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  max-height: 20%;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.lang-picker > * {
+  border-width: 0px;
+  font-size: 16px;
+  color: var(--color-text-secondary);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right > * {
+  display: inline-block;
+}
+
+.header-right > a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.have-account {
+  font-size: 18px;
+  margin-right: 10px;
+  color: var(--color-text-secondary);
+}
+
+.sign-up-btn {
+  cursor: pointer;
+  padding: 5px 28px;
+  font-size: 20px;
+  color: var(--color-text-main);
+  background-color: transparent;
+  border: 1px #111111 solid;
+  border-radius: 32px;
+}
+
+.main-form-content {
+  display: block;
+  padding: 40px;
+  padding-top: 14px;
+  margin: auto;
+  height: 80%;
+  width: 55%;
+  border: #66666635 1px solid;
+  border-radius: 32px;
+}
+.main-logo-container {
+  display: block;
+  margin: auto;
+  padding-top: 7px;
+  padding-left: 2px;
+  height: 82px;
+  width: 82px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  box-shadow: 0px 0px 12px #111111;
+}
+.main-logo-container > img {
+  filter: drop-shadow(0px 0px 4px #111111);
+  height: 80px;
+  width: 80px;
+}
+.title {
+  margin: auto;
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 32px;
+}
+.sub-title {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 32px;
+  text-align: center;
+  color: var(--color-text-description);
+  font-size: 16px;
+}
+
+.main-form-content > form {
+  margin: auto;
+  width: 100%;
+}
+
+.main-form-content > form > * {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.main-form-content > form > :is(label, div) {
+  display: inline;
+  padding-left: 9px;
+  text-align: start;
+  color: var(--color-text-description);
+  font-size: 16px;
+}
+
+.hide-icon {
+  padding-right: 9px;
+  float: right;
+  text-align: end;
+}
+
+.main-form-content > form input {
+  height: 56px;
+  width: 100%;
+  border: rgba(102, 102, 102, 0.35), 1px solid;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  text-align: start;
+  padding: 15px;
+}
+
+.tos-items {
+  display: flex !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.tos-items > input {
+  display: inline;
+  background-color: #111111;
+  width: 24px !important;
+  height: 24px !important;
+  margin-right: 10px;
+}
+
+.tos-items > input:checked {
+  accent-color: #111111;
+}
+
+.term {
+  display: inline;
+}
+
+.tos-items a {
+  text-decoration: underline;
+}
+
+.form-submit {
+  height: 56px;
+  width: 100%;
+  margin-top: 14px !important;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(17, 17, 17, 0.25);
+  border: 0px;
+  border-radius: 32px;
+}
+
+.hr-or {
+  width: 75%;
+  height: 1px;
+  margin: auto;
+  margin-top: 25px;
+  border: none;
+  background-color: rgba(102, 102, 102, 0.25);
+  overflow: visible;
+}
+
+.hr-or::after {
+  padding: 10px;
+  content: "OR";
+  color: var(--color-text-main);
+  background-color: white;
+  position: relative;
+  left: 50%;
+  margin-left: -20px;
+  top: -12px;
+}
+
+.social-media-login {
+  padding-top: 25px;
+}
+
+.social-media-login > button {
+  display: flex;
+  height: 56px;
+  width: 100%;
+  border: var(--color-text-secondary), 1px solid;
+  border-radius: 40px;
+  margin-bottom: 16px;
+  color: var(--color-text-secondary);
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-media-login > button > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  height: 32px;
+  width: 32px;
+  font-size: 22px;
+}
+
+.apple-icon {
+  padding-right: 14px;
+  font-size: 28px !important;
+}
